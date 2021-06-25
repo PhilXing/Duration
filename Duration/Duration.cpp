@@ -6,6 +6,9 @@ using namespace std;
 
 int ShowUsage()
 {
+	printf("This tool calculate duration between times in 24h format.\n\n"
+		"\tUsage: duration [startTime] endTime\n"
+	);
 	return 1;
 }
 
@@ -44,12 +47,12 @@ int main(int argc, char* argv[])
 		tmDuration.tm_sec += 60;
 		tmDuration.tm_min--;
 	}
-	if (tmDuration.tm_min < 0) 
+	if (tmDuration.tm_min < 0)
 	{
 		tmDuration.tm_min += 60;
 		tmDuration.tm_hour--;
 	}
-	if (tmDuration.tm_hour < 0) 
+	if (tmDuration.tm_hour < 0)
 	{
 		tmDuration.tm_hour += 24;
 	}
