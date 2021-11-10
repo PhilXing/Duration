@@ -6,7 +6,7 @@ using namespace std;
 
 int ShowUsage()
 {
-	printf("This tool calculate duration between times in 24h format.\n\n"
+	printf("Duration v0.1: calculate duration between times in 24h format.\n\n"
 		"\tUsage: duration [startTime] endTime\n"
 	);
 	return 1;
